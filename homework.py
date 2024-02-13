@@ -1,5 +1,6 @@
-
 #1-Kullanıcının girdiği boy ve ağırlık değerlerine göre vücut kitle indeksini (VKİ = ağırlık/(boy*boy)) hesaplayınız.
+question_height = float(input("What is your hegiht?:"))
+question_weight = float(input("What is your weight?:"))
 
 bmi_calculation = float(question_weight / (question_height * question_height))
 
@@ -17,13 +18,12 @@ else:
 
 #2-Maaşı ve zam oranı girilen işçinin zamlı maaşını hesaplayarak ekranda gösteriniz.
 
-maas = float(input("maasınızı giriniz: "))
-zamorani = float(input("zam oranını giriniz: "))
+salary = float(input("Enter your salary: "))
+raise_percentage = float(input("Enter the raise percentage: "))
 
-zammiktari= (maas*( zamorani / 100))
-net_maas=(maas+zammiktari)
-print(net_maas)
-
+raise_amount = salary * (raise_percentage / 100)
+net_salary = salary + raise_amount
+print(net_salary)
 
 #3-Kullanıcının girdiği üç sayı arasında en büyük olanı bulan ve sonucu yazdıran bir program yazınız.
 
@@ -51,8 +51,7 @@ def calculate_area(radius):
 
     area = math.pi * (radius ** 2)
     return area
-#comment
-#comment2
+
 def calculate_perimeter(radius):
  
     perimeter = 2 * math.pi * radius
