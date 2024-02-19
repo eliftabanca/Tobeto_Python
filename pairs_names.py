@@ -1,10 +1,6 @@
 #This bot makes grouping easier for pairs in the lesson.
 #It puts 5 different people for each pair, creating a total of 6 pairs.
 import random
-
-
-
-import random
 file_path = "class_members_list.txt"
 
 def get_names_from_file(file_path):
